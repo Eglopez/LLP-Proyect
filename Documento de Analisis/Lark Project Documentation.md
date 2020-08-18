@@ -192,3 +192,134 @@ Lo mismo sucedía con los parametros, estos se nombraron con la siguiente estruc
 **FOR'S**:
 
 * En Javascript se trabaja el for de una manera muy distinta y no es la misma que Python. Investigando se llego a la manera para poder usar el condicional for de la misma manera que en Javascript. Una vez terminado lo anterior se procedio a encontrar problemas los cuales fueron los mismo que el condicional while, incrementar la variable dependiendo de su recorrido. 
+
+## Metodos de la clase Semantic.py y sus funciones
+
+### Metodos de operaciones aritmeticas
+
+Se enlistan los siguientes metodos cuyo fin es realizar operaciones aritmeticas y verificar si se trata de int, float, identifiers o combinaciones de estos para regresar la operación con su tipo de dato respectivo:
+
+- sum
+- div
+- mult
+- sub
+
+### Metodos de guardado y ejecución de funciones
+
+Se enlistan los siguientes metodos cuyo fin es ejecutar y guardar funciones. Se ejecuta la función cuando se realiza el llamado de dicha función:
+
+- createfunc
+- funcexists
+- execfunc
+- returnrecursive
+
+### Metodos de ejecución de estructuras de control de flujo y condicionales (dentro de una función sin return)
+
+Se enlistan los siguientes metodos cuyo fin es ejecutar estructuras de control de flujo y condicionales:
+
+- ifelse
+- whiles 
+- fors
+- execif
+- execwhile
+- execfor
+- ifcondgnames
+- ifcondlnames
+- ifcondenames
+- ifcondgenames
+- ifcondlenames
+- whileless
+- whilelessequal
+- whilemore
+- whilemoreequal
+- whileequal
+- forless
+- forlessequal
+
+### Metodos de ejecución de estructuras de control y condicionales (dentro de una función con return)
+
+- ifreturn
+- ifcondl
+- ifcondg
+- ifconde
+- ifcondge
+- ifcondle
+- whiles 
+- fors
+- execif
+- execwhile
+- execfor
+- whileless
+- whilelessequal
+- whilemore
+- whilemoreequal
+- whileequal
+- forless
+- forlessequal
+
+### Metodos de impresion de console.log y console.error (Fuera de una función)
+
+Los siguientes metodos se encargan de la impresion de consoles:
+
+- printnum
+- print_
+- printnum_alt
+- print_error
+- print_alt
+- printvar
+- printvar_alt
+- cleanParam
+- printwithfunc
+
+### Metodos de impresion de console.log y console.error (dentro de una estructura de flujo de control y condicional)
+
+Las impresiones dentro de estas estructuras se realizan al instante sin necesidad de metodos.
+
+### Metodos de asignación
+
+Los siguientes metodos tienen la funcion de crear y asignar variables:
+
+- assignvar
+- assignvaralt
+
+Los siguientes metodos no crean variables, pero retornan sus tokens para que puedan ser creados despues (Aplicable a funciones y condicionales):
+
+- assignvarinif
+- assignvarinfunc
+
+### Metodos de obtencion de valores
+
+Los siguientes metodos obtienen los valores de parametros, variables, etc:
+
+- getvar
+- getparam
+
+### Metodos de retorno para construcción de listas con arboles y tokens
+
+Los siguientes metodos no operan directamente en el codigo de javascript, sus funciones son meramente para construcción de listas de tokens y arboles para generar las ejecuciones correspondientes:
+
+- boolt
+- boolf
+- booln
+- eos
+- consolelogcond
+- consoleerrorcond
+- opsum
+- opsub
+- opmult
+- opdiv
+- ifw
+- elsew
+- funcw
+- retw
+- whilew
+- leftpar
+- rightpar
+- varkeyword
+- leftbrace
+- rightbrace
+- opequals
+- opcompare
+- opgrtrthan
+- oplessthan
+- forw
